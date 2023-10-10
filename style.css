@@ -1,0 +1,683 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 1rem;
+  height: 100%;
+  
+}
+
+
+body, header {
+  border: 3px blue solid;
+  min-height: 50px;   /* esta es la altura*/
+  margin: 1rem;
+  min-width: 400px;   /* para que el ancho sea responsivo no debe superar los 400 px*/
+  text-align: center;
+}
+
+main{
+  min-height: 200px;
+}
+
+
+/* Estilos para la sección */
+section {
+  margin-top: 20px; /* Añade espacio en la parte superior de la sección */
+  padding: 20px; /* Añade espacio interno a la sección si es necesario */
+  background-color: rgb(245, 242, 237); /* Cambia el color de fondo de la sección si es necesario */
+}
+
+/* Estilos para el pie de página */
+footer {
+  border: 3px blueviolet solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: silver;
+  /* Cambia este valor al color deseado */
+  padding: 20px;
+}
+
+/* Estilos para quitar los puntos de la lista en el pie de página */
+.centered-footer ul {
+  list-style: none; /* Quita los puntos de la lista */
+  padding: 0; /* Elimina el espacio interior por defecto */
+}
+
+.centered-footer li {
+  margin: 10px 0; /* Añade espacio entre los elementos de la lista */
+}
+
+/* SELECTOR DE TIPO ES PARA TODOS LOS ELEMENTOS QUE COINCIDEN CON EL NOMBRE DEL
+ELEMENTO ESPECIFICADO */
+/* EXISTE UN SELECTOR UNIVERSAL QUE ES UN ASTERISCO *
+SE APLICA DE LA SIGUIENTE FORMA X EJEMPLO PARA DARLE COLOR A TODO EL TEXTO DE NUESTRA
+PAGINA:
+* {
+  COLOR: PURPLE (PURPURA)
+}
+Y ENTONCES APLICARA ESE COLOR A TODO EL TEXTO DE NUESTRA PAGINA */
+
+p {
+  color: rgb(1, 1, 71);
+  /* ES EL COLOR DE LOS PARRAFOS */
+}
+
+b {
+  color: navy
+}
+
+/* SELECTOR DE CLASE: SELECCIONA TODOS LOS ELEMENTOS QUE TIENEN EL ATRIBUTO Class ESPECIFICADO
+SINTAXIS: .classname
+EJEMPLO: .index seleccionara cualquier elemento que tenga la clase "index". */
+
+/* para darle color a las listar no ordenadas (ul) y a las ordenadas (ol) */
+
+ul {
+  color: rgb(3, 1, 31);
+}
+
+ol {
+  color: rgb(16, 3, 66);
+}
+
+/*DE ESTA FORMA LE ESTAMOS APLICANDO EL COLOR CHOCOLATE A TODAS LAS LISTAS ORDENADAS Y NO ORDENADAS
+PARA EVITAR QUE ESO SE APLIQUE SE PUEDE UTILIZAR EL SELECTOR DE CLASE */
+
+
+/* EN HTML SE LE ASIGNO A TODOS LOS SUBTITULOS EN NEGRITA EL COLOR navy PERO PRIMERO EN CADA <b 
+de negrita se coloca <b class="colorful">Mantenimiento de Redes:</b> x ejemplo y ASI SE CREA UN
+SELECTOR DE CLASES   EL PUNTO AL PRINCIPIO INDICA QUE ES UN SELECTOR DE CLASE Y NO OLVIDAR
+EL PUNTO Y COMA DESPUES*/
+
+.colorful {
+  color: navy;
+  /* Cambia este valor al color deseado */
+}
+
+/* Centrar todos los encabezados h1 a h6 */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+/* para que la flecha arriba vuelva a la barra de navegacion: */
+html, body {
+  scroll-behavior: smooth;
+}
+
+
+/* Estilos para cambiar el tamaño de un titulo: */
+
+h1 {
+  font-size: 50px;
+  color: navy;
+  
+}
+
+h2 {
+  font-size: 20px;
+  color: navy;
+}
+
+h3 {
+  font-size: 20px;
+  color: navy;
+}
+
+h4 {
+  font-size: 18px;
+  color: navy;
+}
+
+h5 {
+  font-size: x-large;
+  color: navy;
+}
+
+h6 {
+  font-size: medium;
+  color: navy;
+}
+
+/* FAMILIAS TIPOGRAFICAS PARA CAMBIAR EL TIPO DE FUENTE DE LOS TEXTOS*/
+
+body {
+  text-align: left;
+  font-family: Arial, sans-serif;
+  background-color: #f7f1e9;
+  margin: 10;
+  padding: 10;
+}
+
+
+/* Estilos para el encabezado */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/*Espacio entre el logo y el título */
+header img {
+  width: 100px;
+  margin-right: 50px;
+}
+
+header h1 {
+  font-size: 30px;
+  /* Tamaño del título */
+  margin: 0;
+}
+
+/*este es el color de la barra del TITULO DE LA PAGINA
+EL PADDING ES EL BORDE QUE HAY ENTRE LA TOTALIDAD DE LA PAGINA Y SU CONTENIDO*/
+header {
+  background-color: silver;
+  color: #38d3df;
+  padding: 10px 0;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Estilo para listas ordenadas */
+.ordered-list {
+  list-style-type: decimal;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilo para listas desordenadas */
+.unordered-list {
+  list-style-type: disc;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilo para los elementos de la lista */
+.ordered-list li,
+.unordered-list li {
+  margin: 5px 0; /* Agrega espacio vertical entre elementos */
+}
+
+.centered-text {
+  text-align: center; /* Centra el texto en el párrafo con clase "centered-text" */
+}
+
+/* Estilos para quitar los puntos de las listas dentro de elementos h3 */
+h3 ul {
+  list-style: none; /* Quita los puntos de la lista */
+  padding: 0; /* Elimina el espacio interior por defecto */
+}
+
+h3 ul li {
+  margin: 10px 0; /* Añade espacio entre los elementos de la lista */
+}
+
+/* Estilos para quitar números y puntos y centrar las listas ul y ol */
+ul, ol {
+  list-style: none; /* Quita los números y puntos de las listas */
+  padding: 0; /* Elimina el espacio interior por defecto */
+  text-align: center; /* Centra el contenido de las listas */
+}
+
+/* Estilos para los elementos de la lista li dentro de ul y ol */
+li {
+  margin: 10px 0; /* Añade espacio entre los elementos de la lista */
+}
+
+
+/* CREAR UN BORDE AL REDEDOR DE UNA IMAGEN :
+.imagen {
+  width: 100px;
+  border-width: 5px;
+  border-color: blueviolet;
+  border-style: solid;
+}
+/* hay otros border-style: none para que no haya en una imagen determinada
+otra es dotted (punteado), dashed son segmentos de lineas, double ,groove es como un zurco,
+ridge significa cresta, inset o outset  y se puede usar otro estilo para otro borde
+border-style: doble groove dotted ridge son 4 estilos diferentes giran como las agujas del reloj
+
+/*PARA BORDES REDONDEADOS: pero redondea la imagen no tiene marco 
+.bordes-redondeados {
+  border-radius: 20px
+}
+.bordes-redondeados {
+  border-radius: 20%     se usa 50% para hacerla redonda y si es menor los bordes quedan redondeados
+}                           en este caso, utilizando porcentaje hace un circulo o un ovalo de la imagen
+*/
+
+
+/*#  ALT 35 PARA EL NUMERAL*/
+/*se le asigna un id al titulo de la pagina primero ID EN CSS*/
+
+#titulo-pagina {
+  font-size: 30px;
+  color: navy;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+#imagen-logo {
+  border-radius: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: navy;
+  width: 100px; /* Tamaño de la imagen */
+  height: 100px;
+  transition: transform 5s ease; /* Configuración de la animación */
+}
+
+/* Estilos para aplicar la animación cuando se pasa el mouse sobre la imagen */
+#imagen-logo:hover {
+  transform: rotate(360deg); /* Rotación de 360 grados al pasar el mouse */
+}
+
+/* Estilos para el título */
+#titulo-pagina {
+  font-size: 24px; /* Tamaño inicial del título */
+  color: navy; /* Color inicial del título */
+  animation: titleAnimation 5s infinite alternate; /* Configuración de la animación */
+  transition: transform 0.5s ease, color 0.5s ease; /* Configuración de la animación */
+}
+
+/* Estilos para aplicar la animación cuando se pasa el mouse sobre el título */
+#titulo-pagina:hover {
+  font-size: 30px; /* Tamaño del título al pasar el mouse */
+  color: #6209c7; /* Nuevo color del título al pasar el mouse */
+  transform: scale(1.1); /* Efecto de acercamiento (escala 1.1 veces) */
+}
+
+
+/* Definición de la animación */
+@keyframes titleAnimation {
+  0% {
+    font-size: 24px;
+    color: #3498db;
+  }
+  100% {
+    font-size: 30px;
+    color: #1904da;
+  }
+}
+
+
+/* LE ASIGNAMOS UN ID DENTRO DE (UL) LISTA DESORDENADA DEL CONTACTO*/
+/*UTILIZAMOS LA MISMA FAMILIA DE FUENTE QUE EN EL TITULO*/
+
+#contactenos {
+  font-size: 15px;
+  color: navy;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Establecer el margen izquierdo en 0 para que el div esté pegado al borde izquierdo */
+
+#sitios-interes {
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 0px;
+  text-align: left;
+  color: navy;
+}
+
+#sitios-interes a {
+  display: block;
+  text-align: left;
+  background-color: silver;
+  /* Agrega el color silver al fondo de los enlaces */
+  padding: 5px;
+  /* Espaciado interno para los enlaces */
+  margin-bottom: 5px;
+}
+
+/* Margen inferior entre los enlaces */
+aside div.form-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px; /* Ajusta el ancho según tus necesidades */
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilos para el aside de sitios de interés */
+.links-container {
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  color: blue;
+}
+
+.links-container a {
+  display: block;
+  text-align: left;
+  background-color: navajowhite;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+/* Estilos para el formulario de contacto 
+.form-container {
+  width: 300px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+.full-width-container {
+  width: 100%;
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+iframe {
+  width: 100%; /* Hace que el iframe ocupe todo el ancho disponible */
+  max-width: 100%; /* Garantiza que no se desborde en dispositivos pequeños */
+  height: 300px; /* Ajusta la altura automáticamente según el ancho */
+}
+
+/* COLOR DE FONDO PARA LOS CONTENEDORES DIV: 
+div {
+  background-color: thistle;
+  margin-left: 0; /* Establece el margen izquierdo en 0 para que el div esté pegado al borde izquierdo */
+
+div a {
+  float: left;
+  /* Si deseas que los enlaces floten a la izquierda  los enlaces estan en a*/
+  font-weight: bold;
+}
+
+/* Opcional: Estilo para el div contenedor - en Div estan los enlaces de Sitios de Interes*/
+div {
+  padding: 10px;
+  border: none;
+  margin-left: 5px;                     /* siempre proporcionar una unidad de medida, como 'px' */
+}
+
+.image-container {
+  display: flex; /* Utilizamos flexbox para alinear las imágenes en línea */
+  align-items: center; /* Centramos verticalmente las imágenes */
+}
+
+.image-container a {
+  margin-right: 10px; /* Agregamos un margen derecho para separar las imágenes */
+}
+
+.image-left{
+  margin-left: 900px;
+}                             /*para que la flecha derecha me quede a la derecha nex pagina*/
+
+.section-container {
+  display: flex;
+  flex-direction: column; /* Apilamos las secciones verticalmente */
+  align-items: center; /* Centramos horizontalmente en el centro del documento */
+  text-align: center; /* Alineamos el texto al centro del documento */
+}
+
+/* Estilo adicional si es necesario */
+.section-container section {
+  margin-bottom: 20px; /* Agrega espacio entre las secciones */
+}
+/* Estilos para el elemento nav 
+nav {
+  background-color: #f2f2f2; /* Color de fondo 
+  border: 1px solid #ccc;   /* Borde 
+  padding: 10px;            
+}
+ /* Espacio interno alrededor del contenido */
+
+/* Estilos para los elementos de la lista dentro del nav */
+/* Estilo para el menú de navegación */
+nav {
+  text-align: center;
+  background-color: #0b0ead;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centramos horizontalmente los elementos */
+  /*flex-wrap: wrap; /* Permitimos que los elementos se envuelvan si no caben en la pantalla */
+}
+
+nav ul li {
+ /* margin: 5px; /* Agrega un pequeño margen entre los elementos */
+  font-size: 15px;
+  color: navy;
+  /*border: 1px solid navy; /* Agregamos un borde fino */
+  padding: 5px 8px; /* Agregamos un espacio interno */
+}
+
+/* Estilo para los enlaces */
+nav a {
+  text-decoration: none;
+  color: navy;
+}
+
+/* Estilos para la lista de navegación */
+.navigation-list {
+  list-style: none; /* Quita los puntos de lista */
+  padding: 0; /* Elimina el espacio interior por defecto */
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+  justify-content: space-around; /* Distribuye los elementos horizontalmente */
+}
+
+
+.navigation-list li {
+  background-color: #3445db; /* Color de fondo para los elementos de la lista */
+  margin-bottom: 5px; /* Espacio entre elementos de la lista */
+  margin: 5px 0;      /*ver*****/
+}
+
+/* Estilos para los enlaces */
+.navigation-list li a {
+  text-decoration: none; /* Quita la subrayado de los enlaces */
+  color: #fff; /* Color del texto de los enlaces */
+  display: block; /* Hace que los enlaces ocupen todo el espacio del elemento li */
+  padding: 10px 20px; /* Espaciado dentro de los enlaces */
+  transition: background-color 0.3s; /* Efecto de transición al cambiar el color de fondo */
+}
+
+.navigation-list li a:hover {
+  background-color: #e74c3c; /* Color de fondo al pasar el mouse sobre los enlaces */
+  color: #fff; /* Color del texto al pasar el mouse sobre los enlaces */
+}
+
+/* Media query para pantallas pequeñas (dispositivos móviles) */
+@media screen and (max-width: 768px) {
+  .navigation-list {
+    flex-direction: column; /* Apila los elementos en pantallas pequeñas */
+    align-items: center; /* Centra los elementos verticalmente */
+  }
+
+
+
+/*PARA CENTRAR LOS PARRAFOS*/
+.centered-text {
+  text-align: center;
+}
+/*
+.formulario-horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #ccc; 
+  padding: 20px; 
+}
+
+.formulario-horizontal label,
+.formulario-horizontal input[type="text"],
+.formulario-horizontal button {
+  margin-right: 10px;
+}
+/* Agrega espacio interno al formulario */
+
+/*formato de tablas para insertar imagenes: */
+
+/* Estilo para la tabla */
+table {
+  width: 100%; /* Ancho de la tabla al 100% del contenedor */
+  border-collapse: collapse; /* Colapsar los bordes de las celdas */
+  text-align: center; /* Alinear el contenido al centro */
+}
+
+/* Estilo para las celdas de la tabla */
+td {
+  padding: 10px; /* Espaciado interno en las celdas */
+  border: 1px solid #ccc; /* Borde de 1 píxel con un color gris claro */
+}
+
+/* Estilo para las imágenes dentro de las celdas */
+td img {
+  max-width: 100%; /* Asegurar que las imágenes no sean más anchas que las celdas */
+  height: auto; 
+}
+/* Mantener la proporción de aspecto de las imágenes */
+
+
+/* Estilos para las secciones */
+.section {
+  padding: 40px 0;
+  text-align: left;
+}
+
+.highlight {
+  background-color: #f8f8f8;
+}
+
+.highlight-description {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services {
+  background-color: #fff;
+}
+
+.service-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.service-list li {
+  flex: 1;
+  max-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.service-list h3 {
+  margin-top: 10px;
+}
+
+.emphasized {
+  font-weight: bold;
+  font-style: italic;
+}
+
+b{
+  color:navy;
+}
+
+.next-page-link {
+  position: fixed;
+  bottom: 20px; /* Ajusta la posición vertical según tus preferencias */
+  right: 20; /* Esto alinea la flecha a la esquina inferior derecha */
+}
+
+
+/*SELECTORES DE ATRIBUTO   CORCHETES ALT 91 Y ALT 93*/
+/*input[type="radio"] {
+  margin: 15px;
+}
+
+input[type="checkbox"] {
+  margin: 15px;
+}
+
+/*UNIDADES ABSOLUTAS (PIXELES) Y RELATIVAS <EM> O VW ES EL 1% DE LA VENTANA ANCHO 
+Y VH LA ALTURA DE LA VENTANA */
+
+
+/*
+.contact-info p {
+  margin: 0;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.social-links li {
+  margin-right: 10px;
+}
+
+.newsletter form {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter input[type="email"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  background-color: #f8f8f8;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+.padre{
+    background-color: lightblue;
+    border: 2px solid blue;
+    height: 500px;
+    width: 80%;
+    margin: 50px auto;
+
+}
+
+.hijo{
+    background-color: navy;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    border: 2px dashed white;
+    width: 200px;
+    height: 100px;
+    margin: 30px;
+    padding: 20px;
+}
+*/

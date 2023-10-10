@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE =edge">
+  <link rel="icon" href="IMG/grupo.ico">
+  <title>GRUPO II ASESORAMIENTO EMPRESARIAL INTEGRAL</title>
+  <meta name="description"
+    content="Asesoramiento contable e impositivo, Asesoramiento jurídico y laboral, Seguridad e Higiene y cumplimientos LRT, Mantenimiento de Redes, Seguridad Informática, Reparación PC">
+  <meta name="author" content="Elvira M. Maggiolo, Maria Eugenia Jaccord, Walter O. Alustiza, Marcelo A. Galarza">
+  <meta name="keywords"
+    content="impuestos, balances, monotributo, afip, arba, agip, iva, Ingresos brutos, asesoramiento jurídico laboral, Seguridad e higiene, reparación pc, redes">
+  <link href="CSS/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <img id="imagen-logo" src="IMG/logo.png" alt="Logo del Grupo">
+    <h1 id="titulo-pagina">GRUPO ASESORAMIENTO EMPRESARIAL INTEGRAL</h1>
+  </header>
+
+  <main>
+    <div id="arriba"></div>
+    <nav>
+      <ul class="navigation-list">
+        <li><a href="index.html">NOSOTROS Y EL ASESORAMIENTO INTEGRAL</a></li>
+        <li><a href="contable-impositivo.html">ASESORAMIENTO CONTABLE IMPOSITIVO</a></li>
+        <li><a href="juridico-previsional.html">ASESORAMIENTO JURIDICO Y PREVISIONAL</a></li>
+        <li><a href="seg-e-higiene.html">SEGURIDAD E HIGIENE DEL TRABAJO</a></li>
+        <li><a href="seg-informat.html">SEGURIDAD INFORMATICA-REDES</a></li>
+        <li class="separator"></li>
+        <li><a href="galeria.html">GALERIA</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+        <li><a href="registro.html">REGISTRACION</a></li>
+      </ul>
+    </nav>
+    <section>
+      <form>
+        <label for="nom">Nombre: *</label>
+        <input type="text" name="nom" id="nom" maxlength="30" required><br>
+        <label for="ape">Apellido:*</label>
+        <input type="text" name="ape" id="ape" maxlength="30" required><br>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" min="0" max="120">
+        <br><br>
+        <label for="nac">Nacionalidad:</label>
+        <input type="text" name="nac" id="nac" maxlength="30">
+        <br><br>
+        <label for="fechnac">Fecha de nacimiento:</label>
+        <input type="date" name="fechnac">
+        <label for="residencia">Lugar de Residencia</label>
+        <select name="residencia" id="residencia">
+          <option value="1">Ciudad de Buenos Aires</option>
+          <option value="2">Gran Buenos Aires</option>
+          <option value="3">Interior del País</option>
+        </select>
+        <p>* Campos Obligatorios</p>
+        <fieldset>
+          <legend>Datos de contacto e Interes sobre sector:</legend>
+          <label for="correo">E-mail:</label>
+          <input type="email" name="correo" id="correo" placeholder="emmaie@gmail.com Example" required><br>
+          <label for="tel">Celular: *</label>
+          <input type="number" name="tel" id="tel" required>
+          <br>
+          <label for="sector">Necesito consultar sobre el sector:</label>
+          <input type="checkbox" name="sector" value="1"> Contable
+          <input type="checkbox" name="sector" value="1"> Impositivo
+          <input type="checkbox" name="sector" value="1"> Juridico
+          <input type="checkbox" name="sector" value="1"> Seguridad e Higiene
+          <input type="checkbox" name="sector" value="1"> Seguridad Informatica
+          <br>
+          <label for="rb">Que considera importante al momento de su consulta?</label>
+          <input type="radio" name="rb" value="1"> Pronta Respuesta
+          <input type="radio" name="rb" value="2"> Idoneidad del Profesional
+          <input type="radio" name="rb" value="3"> Concertar una entrevista personal
+          <input type="radio" name="rb" value="4"> Concertar una entrevista por meet
+          <br>
+          <p>*Campos Obligatorios</p>
+        </fieldset>
+        <input type="checkbox" name="condiciones" id="condiciones"> Acepto recibir novedades por correo electronico o
+        Celular
+        <br><br>
+        <input type="submit" value="Enviar Datos">
+        <input type="reset" value="Borrar Datos">
+      </form>
+    </section>
+
+    <br><br>
+    <div class="image-container">
+      <a href="#arriba"><img src="IMG/flechaarriba.png"></a>
+      <a href="https://www.facebook.com.ar" target="_blank"><img src="IMG/me-gusta.png" alt="Visítenos en Facebook"></a>
+      <a class="image-left">
+        <a href="index.html" class="next-page-link">
+          <img src="IMG/flecha regresar al princio.png" alt="Regresar al Inicio"></a>
+    </div>
+    <hr>
+  </main>
+  <footer class="centered-footer">
+    <h3><b>Para contactarse con nuestros servicios:</b></h3>
+    <ul id="contactenos">
+      <li><b>por WhatsApp al 15 5999-9999</b></li>
+      <li><b>Grupo II-A-E-I@gmail.com</b></li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>
